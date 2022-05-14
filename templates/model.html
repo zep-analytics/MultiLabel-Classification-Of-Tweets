@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Multi Label Prediction</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+   <body>
+      
+	  <div class="container">
+        <h1>Multi Label Prediction</h1>
+		<div class="row">
+        
+		  <form  method="POST" action="/submit">
+		  	<div class="col-sm-9">
+			 <div class="form-group  purple-border">
+				  <label for="comment">Enter Your Tweet</label>
+				  <textarea class="form-control" rows="2" id="query" name="query" rows="10" cols="100" autofocus>{{query}}</textarea>
+			</div>
+			
+
+			</div>
+			<div class="col-sm-3">
+			<button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
+			</div>
+		  </form>
+		  </div>
+		  
+		<div class="row"> 
+			<div class="col-sm-9">
+                <label for="output">Predicted Labels</label>
+			<textarea class="form-control" rows="2" id="comment" name="query29" rows="2" cols="5" autofocus>{{prediction}}</textarea>
+
+			</div>
+		</div>
+	</div>		
+   </body>
+</html>
